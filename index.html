@@ -6,58 +6,121 @@
     <title>Jason | Personal Portfolio</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui, sans-serif;}
-        body{background:#0f172a;color:#e2e8f0;line-height:1.6;padding:2rem max(1rem, calc((100vw - 1000px)/2));}
+        body{background:#0f172a;color:#e2e8f0;line-height:1.6;padding:2rem max(1rem, calc((100vw - 1100px)/2));}
         nav{display:flex;gap:2rem;margin-bottom:4rem;flex-wrap:wrap;}
         nav a{color:#93c5fd;text-decoration:none;}
         nav a:hover{color:#fff;}
         .hero{margin-bottom:4rem;}
         h1{font-size:2.5rem;margin-bottom:0.5rem;}
         .sub{color:#94a3b8;font-size:1.1rem;margin-bottom:2rem;}
-        section{margin-bottom:3rem;}
-        h2{border-bottom:1px solid #334155;padding-bottom:0.5rem;margin-bottom:1rem;color:#cbd5e1;}
-        .card{background:#1e293b;padding:1.5rem;border-radius:12px;margin-bottom:1rem;}
-        .card h3{color:#bfdbfe;margin-bottom:0.5rem;}
+        section{margin-bottom:3.5rem;}
+        h2{border-bottom:1px solid #334155;padding-bottom:0.5rem;margin-bottom:1.2rem;color:#cbd5e1;}
+        h3{color:#bfdbfe;margin-bottom:0.4rem;}
+        .card{background:#1e293b;padding:1.4rem;border-radius:12px;margin-bottom:1rem;}
+        .card small{color:#94a3b8;}
         footer{margin-top:6rem;color:#64748b;font-size:0.9rem;}
+        .avatar{border-radius:12px;margin-bottom:1rem;max-width:280px;}
     </style>
 </head>
 <body>
+    <!-- 导航栏 -->
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#activities">Extracurricular Activities</a>
+        <a href="#projects">Key Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- 首页 Home -->
     <section id="home" class="hero">
         <h1>Jason</h1>
-        <p class="sub">Engineering Student | FTC Team Captain | Athlete</p>
-        <p>Passionate about robotics, marine engineering and sports.</p>
+        <!-- 这里放头像照片，后面教你替换图片 -->
+        <!-- <img class="avatar" src="./images/avatar.jpg" alt="Jason photo"> -->
+        <p class="sub">Engineering Student | Robotics Captain | Athlete</p>
+        <p>Passionate about robotics, aquatic‑safety engineering and sports.</p>
     </section>
 
+    <!-- 关于我 About Me -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m an 11th grade international student. I serve as FTC robotics team captain, swimming team vice captain and football left back. I also play drums (Level 10). I focus on engineering projects, especially aquatic safety and smart watercraft.</p>
+        <p>I am an 11‑grade international high‑school student. I am passionate about hands‑on engineering design, robotics innovation and sports. I serve as team captain for swimming and FTC robotics, participate in varsity soccer, and play drums in school band. My main interest lies in water‑related engineering and sports‑tech research.</p>
     </section>
 
+    <!-- 课外活动 CA活动列表【重点】 -->
+    <section id="activities">
+        <h2>Extracurricular Activities</h2>
+
+        <h3>Athletics 体育运动</h3>
+        <div class="card">
+            <h4>Varsity Swim Team | Captain & Assistant Coach</h4>
+            <small>Pinghe | Grades 9‑12</small>
+            <p>Swam for 10 years. Designed customized training system for high‑school athletes. Assisted warm‑ups and movement monitoring; co‑organized competition trips.</p>
+        </div>
+        <div class="card">
+            <h4>Varsity Soccer Team | Left Defender</h4>
+            <small>Pinghe AP | Grades 9‑11</small>
+            <p>5‑year soccer experience. Weekly training, inter‑school & intra‑school matches. Discussed defensive strategies and supported team morale.</p>
+        </div>
+
+        <h3>Robotics 机器人</h3>
+        <div class="card">
+            <h4>FIRST Tech Challenge Team 19603 | Captain, Builder & Operator</h4>
+            <small>FTC | Grades 10‑12</small>
+            <p>Designed, built, tested and debugged competition robots. Trained new team members, connected physics theory with hands‑on building. Operated and repaired robots on competition days.</p>
+        </div>
+
+        <h3>Academic & Tech Clubs 学术科创社团</h3>
+        <div class="card">
+            <h4>Tech Innovation Club | Co‑Founder, Vice President</h4>
+            <small>Pinghe | Grades 11‑12</small>
+            <p>Promote practical engineering among students. Created recruitment games; shared updates on robotics & AI; hosted lectures and discussions on technology ethics.</p>
+        </div>
+
+        <h3>Research 研究项目</h3>
+        <div class="card">
+            <h4>Youth Sports Business & Technology Research | Student Researcher</h4>
+            <small>Independent Research | Grades 11‑12</small>
+            <p>Researched: To what extent does technology improve customer value in sports‑training businesses. Conducted field trips and interviews; collected data and finished research report.</p>
+        </div>
+        <div class="card">
+            <h4>Exploring Engineering Innovation | Engineering Student</h4>
+            <small>Johns Hopkins University | Grade 11</small>
+            <p>Studied mechanics. Completed hands‑on labs including mousetrap car, bending test and spaghetti‑bridge design; adjusted structures to improve stress tolerance.</p>
+        </div>
+
+        <h3>Community Service 志愿活动</h3>
+        <div class="card">
+            <h4>Swim Course | Assistant Coach & Volunteer Teacher</h4>
+            <small>Yongheng Swimming Club | Grades 10‑12</small>
+            <p>Taught swimming and corrected students’ gestures one‑on‑one. Led floating‑boat practice, designed training plans and adjusted for each learner.</p>
+        </div>
+
+        <h3>Music 音乐</h3>
+        <div class="card">
+            <h4>School Band | Drum Player</h4>
+            <small>School Band | Grades 10‑12</small>
+            <p>Started drumming at age 4. Weekly rehearsals with keyboard and guitar players. Performed in school concerts and graduation ceremonies.</p>
+        </div>
+    </section>
+
+    <!-- 重点项目 Projects -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Key Engineering Projects</h2>
         <div class="card">
-            <h3>Smart Wave-generating Swimming Boat</h3>
-            <p>Unmanned wave-generating boat for swimming training.</p>
+            <h4>Anti‑Drowning Belt & Detection Watch</h4>
+            <p>Built waterproof wearable safety device with sensors. Triggers airbag under dangerous heart‑rate / blood‑oxygen conditions; performed real‑world tests and iterations.</p>
         </div>
         <div class="card">
-            <h3>Drowning Prevention Safety Belt</h3>
-            <p>Wearable safety device for water safety.</p>
-        </div>
-        <div class="card">
-            <h3>FTC Robotics</h3>
-            <p>Robot design & build with ESP32-S3 and SolidWorks.</p>
+            <h4>Wave‑Monitor Vessel (Smart Wave‑generating Boat)</h4>
+            <p>Designed and coded wave‑producing vessel. Embedded OpenMV to record underwater swimming strokes for analysis. Completed field testing and market research on swim‑training equipment.</p>
         </div>
     </section>
 
+    <!-- 联系我 Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: example@mail.com</p>
+        <p>Email: jasonhsx@126.com</p>
     </section>
 
     <footer>© 2026 Jason</footer>
